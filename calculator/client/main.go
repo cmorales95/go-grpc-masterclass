@@ -22,5 +22,6 @@ func main() {
 
 	// doSum(client)
 	// doPrimes(client)
-	doAvg(client)
+	// doAvg(client)
+	doMax(client)
 }
