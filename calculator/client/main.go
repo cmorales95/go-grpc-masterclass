@@ -18,7 +18,8 @@ func main() {
 	}
 	defer conn.Close()
 
-	c := pb.NewCalculatorServiceClient(conn)
+	client := pb.NewCalculatorServiceClient(conn)
 
-	doSum(c)
+	// doSum(client)
+	doPrimes(client)
 }
