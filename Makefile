@@ -84,6 +84,10 @@ about: ## Display info related to the build
 	@echo "Go package: ${PACKAGE}"
 	@echo "Openssl version: $(shell openssl version)"
 
+evans:
+	@evans --reflection repl --tls --cacert ./ssl/ca.crt --host localhost
+
+
 help: ## Show this help
 	@${HELP_CMD}
 
